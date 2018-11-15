@@ -26,9 +26,9 @@ function getRate(request, response){
     var wieght = Number(requestUrl.query.weight);
     var type = requestUrl.query.type;
 
-    if((type == "Letters (Stamped)") && (weight > 3.5)){
-        response.write("<p> cannot weigh more than 3.5oz!</p>")
-    } 
+    //if((type == "Letters (Stamped)") && (weight > 3.5)){
+      //  response.write("<p> cannot weigh more than 3.5oz!</p>")
+    //} 
     compute(response,wieght,type);
 }
 
@@ -70,6 +70,7 @@ function compute(response, weight, type){
             else if(weight <= 12){cost = 1 + (.21 * 11);}
             else if(weight <= 9){cost = 1 + (.21 * 12);}
             else if(weight <= 9){cost = 1 + (.21 * 13);}
+        }
 
         }
         if(type == "Large Envelopes (Flats)"){
