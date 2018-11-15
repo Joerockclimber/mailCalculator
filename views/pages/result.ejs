@@ -5,10 +5,12 @@
     </head>
     <body>
         <center>
-        <h1>Postage Rate</h1>
-        <p>Weight: <%=weight%></p>
-        <p>Type:<%=type%></p>
-        <p>Cost:<%=cost%></p>
+            <%if(weight <= 13){ %>
+            <h1>Postage Rate</h1>
+            <p>Weight: <%=weight%></p>
+            <p>Type:<%=type%></p>
+            <p>Cost:<%=cost%></p>
+            <%} else{%><p>Can't weigh more than 13oz</p><%}%>
         </center>
     </body>
 </html>

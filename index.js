@@ -9,7 +9,6 @@ express()
   .get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 */
-
 var express = require('express');
 var app = express();
 var url = require('url');
@@ -61,8 +60,8 @@ function compute(response, weight, type){
         else if(weight <= 10){cost = 1 + (.21 * 9);}
         else if(weight <= 11){cost = 1 + (.21 * 10);}
         else if(weight <= 12){cost = 1 + (.21 * 11);}
-        else if(weight <= 9){cost = 1 + (.21 * 12);}
-        else if(weight <= 9){cost = 1 + (.21 * 13);} 
+        else if(weight <= 13){cost = 1 + (.21 * 12);}
+ 
 
     }
     if(type == "Letters (Metered)"){
@@ -80,8 +79,8 @@ function compute(response, weight, type){
             else if(weight <= 10){cost = 1 + (.21 * 9);}
             else if(weight <= 11){cost = 1 + (.21 * 10);}
             else if(weight <= 12){cost = 1 + (.21 * 11);}
-            else if(weight <= 9){cost = 1 + (.21 * 12);}
-            else if(weight <= 9){cost = 1 + (.21 * 13);}
+            else if(weight <= 13){cost = 1 + (.21 * 12);}
+
         }
 
         }
@@ -98,8 +97,7 @@ function compute(response, weight, type){
             else if(weight <= 10){cost = 1 + (.21 * 9);}
             else if(weight <= 11){cost = 1 + (.21 * 10);}
             else if(weight <= 12){cost = 1 + (.21 * 11);}
-            else if(weight <= 9){cost = 1 + (.21 * 12);}
-            else if(weight <= 9){cost = 1 + (.21 * 13);}       
+            else if(weight <= 13){cost = 1 + (.21 * 12);}       
         }
 
         if(type == "First-Class Package Service—Retail"){
