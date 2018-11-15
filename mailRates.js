@@ -1,6 +1,6 @@
-const express = require('express');
-const app = express();
-const url = require('url');
+var express = require('express');
+var app = express();
+var url = require('url');
 
 app.set('port', (process.env.PORT || 5000));
 
